@@ -25,7 +25,7 @@ def page_form():
 
 @app.errorhandler(404)
 def pageNotFound(error):
-    return render_template('page404.html', menu=menu), 404
+    return render_template('page404.html', title = 'Страница не найдена', menu=menu), 404
             
 if __name__ == '__main__': 
     app.run(debug = True)
