@@ -8,7 +8,8 @@ app.config['SECRET_KEY'] = 'zxcvbnm0501'
 app.config['MAX_CONTENT_LENGTH'] = 8 * 10 * 1024 * 1024
 
 menu = [{'name':'Главная', 'url':'/'},
-        {'name':'Регистрация', 'url':'/form'}]
+        {'name':'Обратная связь', 'url':'/form'},
+        {'name':'Авторизация', 'url':'/login'}]
 
 @app.route("/")
 def index():
